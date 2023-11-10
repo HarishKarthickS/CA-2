@@ -1,9 +1,10 @@
 *{
     margin: 0%;
     padding: 0%;
+    overflow: hidden;
 }
 Body{
-    background-image: url("/img/_2498f958-ee8f-4c6f-9255-9748d5cd04ea.jpg");
+    background-image: url("./img/_2498f958-ee8f-4c6f-9255-9748d5cd04ea.jpg");
     background-size: 1400px 690px ;
     background-repeat: no-repeat;
     display: flex;
