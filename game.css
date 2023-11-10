@@ -1,7 +1,10 @@
+/* Resetting margin and padding for all elements */
 *{
     margin: 0%;
     padding: 0%;
 }
+
+/* Styling for the body element */
 Body{
     background-image: url("./img/world-flag-map-1.png");
     background-repeat: no-repeat;
@@ -11,11 +14,14 @@ Body{
     align-items: center; 
     height: 690px;
     width: 1400px;
+    /* Rainbow animation */
     -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
+    -moz-animation: rainbow 18s ease infinite;
     -o-animation: rainbow 18s ease infinite;
-     animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
 }
+
+/* Styling for the level container */
 #level{
     display: flex;
     flex-direction: column;
@@ -25,10 +31,14 @@ Body{
     width: 300px;
     background-color: rgba(27, 17, 17, 0.336);
 }
+
+/* Styling for the h1 element */
 h1{
     color: gold;
     font-family: Agbalumo; 
 }
+
+/* Styling for the level buttons */
 #low,#med,#high,#disabled{
     width:250px;
     height: 50px;
@@ -39,62 +49,73 @@ h1{
     font-size: 28px;
     cursor: pointer;
     font-family: Black Ops One;
-    cursor: pointer;
     margin: 5px;
 }
 
+/* Styling for the button text and its animation */
 #low span,#med span, #high span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
-  #low span:after,#med span:after,#high span:after {
+}
+
+/* Styling for the button text arrow animation */
+#low span:after,#med span:after,#high span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  #low:hover span,#med:hover span,#high:hover span {
+}
+
+/* Button hover effect */
+#low:hover span,#med:hover span,#high:hover span {
     padding-right: 25px;
-  }
-  
-  #low:hover span:after,#med:hover span:after,#high:hover span:after {
+}
+
+/* Arrow animation on button hover */
+#low:hover span:after,#med:hover span:after,#high:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
 
-
+/* Button hover and active states */
 #low:hover,#med:hover,#high:hover{
     background-color:rgb(226, 226, 17) ;
     color: rgb(0, 0, 0);
 }
+
 #low:active,#med:active,#high:active {
     transform: translateY(4px);
-  }
+}
+
+/* Styling for the disabled button */
 #disabled{
     cursor: not-allowed;
     color: rgba(201, 191, 191, 0.726);
 }
+
+/* Rainbow animation keyframes */
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
     50%{background-position:50% 19%}
     100%{background-position:0% 82%}
 }
+
 @-moz-keyframes rainbow {
     0%{background-position:0% 82%}
     50%{background-position:50% 19%}
     100%{background-position:0% 82%}
 }
+
 @-o-keyframes rainbow {
     0%{background-position:0% 80%}
     50%{background-position:50% 19%}
     100%{background-position:0% 8%}
 }
+
 @keyframes rainbow { 
     0%{background-position:70% 80%}
     15%{background-position:100% 60%}
@@ -105,23 +126,24 @@ h1{
     80%{background-position:90% 30%}
     100%{background-position:40% 80%}
 }
+
+/* Styling for the sound, mute, and volume icons */
 #sound{
     position: absolute;
     right: 1%;
     bottom: 1%;
-
 }
+
 #mute{
     display: block;
     height: 20px;
     width: 20px;
-
     border-radius: 10px;
 }
+
 #volume{
     display: none;
     height: 20px;
     width: 20px;
-
     border-radius: 10px;
 }

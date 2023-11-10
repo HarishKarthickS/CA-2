@@ -1,45 +1,56 @@
-*{
+/* Resetting default margin and padding for all elements */
+* {
     margin: 0%;
     padding: 0%;
     overflow: hidden;
 }
-Body{
+
+/* Styling for the body */
+Body {
     background-image: url("./img/_2498f958-ee8f-4c6f-9255-9748d5cd04ea.jpg");
-    background-size: 1400px 690px ;
+    background-size: 1400px 690px;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     height: 690px;
     width: 1400px;
-
 }
-#content{
+
+/* Styling for the content container */
+#content {
     display: flex;
-    justify-content:space-around; 
-    flex-direction: column; 
-    align-items: center;   
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     height: 343px;
     width: 653px;
     flex-wrap: wrap;
     flex-direction: column;
 }
-h1{
+
+/* Styling for the heading (h1) */
+h1 {
     font-family: Agbalumo;
     margin-top: 1%;
     font-size: 75px;
+    /* Rainbow text effect using linear gradient and animation */
     background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
     background-size: 2100% 2100%;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -webkit-animation: rainbow 18s ease infinite;
     -z-animation: rainbow 18s ease infinite;
     -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
-#button{
+    animation: rainbow 18s ease infinite;
+}
+
+/* Styling for the button */
+#button {
     height: 75px;
     width: 225px;
     border-radius: 50px;
+    /* Gradient background and border styling */
     background: linear-gradient(124deg, #acfbff, rgb(4, 140, 158), #2006af);
     border: 1px solid #00FF38;
     color: #fff;
@@ -47,74 +58,89 @@ h1{
     transition: all 0.5s;
     cursor: pointer;
 }
-button:hover{
+
+/* Styling for button hover state */
+button:hover {
     background: linear-gradient(124deg, #aefa7c, #1eff00, #04741c);
     cursor: pointer;
 }
+
+/* Styling for button span (for animation effect) */
 button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
-  button span:after {
+}
+
+/* Styling for button span after hover effect */
+button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  button:hover span {
+}
+
+/* Styling for button hover state for span */
+button:hover span {
     padding-right: 25px;
-  }
-  
-  button:hover span:after {
+}
+
+/* Styling for button hover state for span after */
+button:hover span:after {
     opacity: 1;
     right: 0;
-  }
-  .button:active {
+}
+
+/* Styling for active state of the button */
+.button:active {
     transform: translateY(4px);
-  }
+}
+
+/* Animation keyframes for rainbow effect */
 @-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+    0% { background-position: 0% 82% }
+    50% { background-position: 100% 19% }
+    100% { background-position: 0% 82% }
 }
+
 @-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+    0% { background-position: 0% 82% }
+    50% { background-position: 100% 19% }
+    100% { background-position: 0% 82% }
 }
+
 @-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+    0% { background-position: 0% 82% }
+    50% { background-position: 100% 19% }
+    100% { background-position: 0% 82% }
 }
-@keyframes rainbow { 
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+
+@keyframes rainbow {
+    0% { background-position: 0% 82% }
+    50% { background-position: 100% 19% }
+    100% { background-position: 0% 82% }
 }
-#sound{
+
+/* Styling for the sound, mute, and volume icons */
+#sound {
     position: absolute;
     right: 1%;
     bottom: 1%;
-
 }
-#mute{
+
+#mute {
     display: block;
     height: 20px;
     width: 20px;
-
     border-radius: 10px;
 }
-#volume{
+
+#volume {
     display: none;
     height: 20px;
     width: 20px;
-
     border-radius: 10px;
 }

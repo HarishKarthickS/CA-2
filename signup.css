@@ -1,7 +1,10 @@
+/* Resetting margin and padding for all elements */
 *{
     margin: 0%;
     padding: 0%;
 }
+
+/* Styling for the main photo container */
 #photo{
     height: 690px;
     /* width: 1000px; */
@@ -9,41 +12,29 @@
     flex-direction: column;
     justify-content: space-around;
 }
-#section-1{
+
+/* Styling for different sections */
+#section-1, #section-2, #section-3, #section-4, #section-5{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
-#section-2{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-#section-3{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-#section-4{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-#section-5{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
+
+/* Styling for images */
 img{
     height: 100px;
     width: 100px;
 }
+
+/* Styling for an absolute position element */
 #abs{
     position: absolute;
     top:10%;
     right: 8%;
     visibility: visible;
 }
+
+/* Styling for a form container */
 #form{
     display: flex;
     flex-direction: column;
@@ -52,54 +43,24 @@ img{
     background-color: rgba(38, 39, 39, 0.466);
     height: 570px;
     width: 300px;
-    
 }
+
+/* Styling for titles and headings */
 .title{
     font-family: 'Kenia', sans-serif;
     font-size: 21px;
     color:#ffee00;
 }
+
 h2{
     /* font-family: 'Kenia', sans-serif; */
     font-family: 'Lobster', sans-serif;
     color:#fff;
     font-size: 33px;
 }
-#button1{
-    height: 50px;
-    width: 150px;
-    border-radius: 50px;
-    color: orangered;
-    font-size: 19px;
-    border: 1px solid orangered;
-    background-color: rgba(38, 39, 39, 0.66);
-    font-family: Black Ops One;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-#button1:hover{
-    color: #fff;
-    background-color: orangered;
-    cursor:pointer;
-}
-#button2{
-    height: 50px;
-    width: 150px;
-    border-radius: 50px;
-    color: green;
-    font-size: 19px;
-    border: 1px solid green;
-    background-color: rgba(38, 39, 39, 0.66);
-    font-family: Black Ops One;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-#button2:hover{
-    color: #fff;
-    background-color: green;
-    cursor:pointer;
-}
+
 h1{
+    /* Styling for a gradient text effect */
     font-family: Agbalumo;
     margin-top: 1%;
     font-size: 48px;
@@ -110,32 +71,23 @@ h1{
     -webkit-animation: rainbow 18s ease infinite;
     -z-animation: rainbow 18s ease infinite;
     -o-animation: rainbow 18s ease infinite;
-     animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
 }
+
+/* Styling for input elements */
 input{
     height:28px;
     width: 250px;
 }
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
+
+/* Keyframe animation for the rainbow effect */
 @keyframes rainbow { 
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
+
+/* Styling for an absolute position element */
 #abs1{
     position: absolute;
     top:3%;
@@ -143,6 +95,8 @@ input{
     left: 12%;
     visibility:hidden;
 }
+
+/* Styling for a how-to-play container */
 #htp{
     font-size: 23px;
     display: flex;
@@ -154,10 +108,10 @@ input{
     width: 1000px; 
     color: rgb(0, 0, 0);
     border-radius: 50px;
-   /* font-family: 'Caveat', cursive; */
-   /* font-family: 'Shadows Into Light', cursive; */
-   font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
 }
+
+/* Styling for an exit button */
 #exit{
     background:none;
     position: absolute;
@@ -165,58 +119,67 @@ input{
     top: -2%;
     border: none;
 }
+
+/* Styling for 'x' icon */
 #x{
     width: 60px;
     height: 60px;
 }
+
+/* Styling for active state of a button */
 button:active {
     transform: translateY(4px);
-  }
+}
+
+/* Styling for list items */
 ul{
     text-decoration: none;
     list-style: none;
 }
-#button1 span,#button2 span {
+
+/* Styling for button span and its hover effect */
+#button1 span, #button2 span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
-  #button1 span:after,#button2 span:after {
+}
+
+#button1 span:after, #button2 span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  #button1:hover span, #button2:hover span {
+}
+
+#button1:hover span, #button2:hover span {
     padding-right: 25px;
-  }
-  
-  #button1:hover span:after,#button2:hover span:after {
+}
+
+#button1:hover span:after, #button2:hover span:after {
     opacity: 1;
     right: 0;
-  }
-  #sound{
+}
+
+/* Styling for sound and mute buttons */
+#sound{
     position: absolute;
     right: 1%;
     bottom: 1%;
-
 }
+
 #mute{
     display: block;
     height: 20px;
     width: 20px;
-
     border-radius: 10px;
 }
+
 #volume{
     display: none;
     height: 20px;
     width: 20px;
-
     border-radius: 10px;
 }
