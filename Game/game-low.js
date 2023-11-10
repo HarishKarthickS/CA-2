@@ -1,3 +1,5 @@
+var audio = new Audio("./bgm/Easy.mp3");
+audio.play();
 let india=document.getElementById('india');
 let australia=document.getElementById("australia");
 let brazil=document.getElementById("brazil");
