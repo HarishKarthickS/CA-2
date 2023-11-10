@@ -1,0 +1,544 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+.country{
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    font-size: 33px;
+    text-align: center;
+}
+ #US #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example1;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+} 
+.detail{
+    right: 0%;
+    top:0%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 690px;
+    width: 400px;
+}
+#time{
+    display: inline;
+    position: absolute;
+    right: 1%;
+    top: 0.5%;
+}
+#timer{
+    display: inline;
+}
+.flag{
+    height: 84px;
+    width: 152px;
+    border: .1px solid rgba(63, 58, 58, 0.486);
+}
+.fq{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-family: Agbalumo;
+}
+.ques{
+    margin-top: 10%;
+    color: #0059ff;
+}
+h1{
+    font-family: Agbalumo;
+    font-size: 48px;
+    background: linear-gradient(124deg,#00ffd5, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3,#1ddde8);
+    background-size: 1800% 1800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+     animation: rainbow 18s ease infinite;
+}
+#options{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 1%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+#option{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 8%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    text-align: center;
+    width: 400px;
+}
+.button2{
+    height: 40px;
+    width: 160px;
+    border-radius: 50px;
+    color: green;
+    font-size: 19px;
+    border: 1px solid green;
+    background-color: rgba(255, 255, 255, 0.66);
+    font-family: Black Ops One;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+.button2:hover{
+    color: #fff;
+    background-color: green;
+    cursor:pointer;
+}
+.button1{
+    height: 40px;
+    width: 160px;
+    border-radius: 50px;
+    color: orangered;
+    font-size: 19px;
+    border: 1px solid orangered;
+    background-color: rgba(255, 255, 255, 0.66);
+    font-family: Black Ops One;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+.button1:hover{
+    color: #fff;
+    background-color: orangered;
+    cursor:pointer;
+}
+.button1 span,.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.button1 span:after,.button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.button1:hover span,.button2:hover span{
+    padding-right: 25px;
+  }
+  
+.button1:hover span:after,.button2:hover span:after{
+    opacity: 1;
+    right: 0;
+  }
+.hint{
+    margin-top: 10%;
+    font-family:Edu TAS Beginner;
+    font-size: 21px;
+    margin-bottom: 1%;
+    color: #ff2400;
+}
+select{
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    background-color: #e81d1d;
+    color: #fff;
+    text-align: center;
+    font-size: 21px;
+}
+@keyframes example1{
+    0%{
+      background-image: url("./img/us/_10d19bf3-7300-4663-938a-339737385d9b.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/us/_2823e133-208c-4402-9505-3198b9cceb9e.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/us/_88513db5-e51c-4d6f-bbef-49d27f072791.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/us/_8b695f37-cbcb-46fa-95f7-bbc458acba86.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+ @-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+#US{
+    display: block;
+ }
+ #Norway{
+    display: none;
+  }
+#Brazil{
+    display: none;
+  }
+#Panama{
+    display: none;
+  }
+#Germany{
+    display: none;
+ }
+#Estonia{
+    display: none;
+  }
+#Kenya{
+    display: none;
+ }
+#Mexico{
+    display: none;
+ }
+#UK{
+    display: none;
+ }
+#Paraguay{
+    display: none;
+ }
+#Norway #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example2;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+#Brazil #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example3;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+#Panama #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example4;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+#Germany #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example5;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+#Estonia #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example6;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+#Kenya #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example7;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+#Mexico #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example8;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+#UK #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example9;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+#Paraguay #photo{
+    height: 690px;
+    width: 960px;
+    animation-name: example10;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+@keyframes example2{
+    0%{
+      background-image: url("./img/Norway/_4fa8b3b2-4c68-4441-b794-83335d96473b.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/Norway/_6ef12dc7-c39a-430b-b82a-599f08d779da.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/Norway/_c6d087d8-c95e-4bb9-89ca-e7e4f992cb74.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/Norway/_f5a65f5b-e27c-4806-89e1-d8afd25ac94e.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+@keyframes example3{
+    0%{
+      background-image: url("./img/Brazil/_3115ab12-7425-4156-81f6-af03005a569f.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/brazil/_51905681-425b-48f0-bdd7-b799c2125c51.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/Brazil/_5dd46d9d-e3dc-4706-9abe-45c47a804e64.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/Brazil/_d44fe1fd-b00e-4203-9dea-637ab7de6d1d.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+@keyframes example4{
+    0%{
+      background-image: url("./img/Panama/_0fc0986a-5245-48a0-bf66-65a6916186ec.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/Panama/_257cdc81-dabb-4965-b758-90664e2173e6.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/Panama/_90d6e215-a584-48d4-b4f3-8119e762df16.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/Panama/_b9a5fa91-ec4f-46b7-87e5-acad33551454.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+@keyframes example5{
+    0%{
+      background-image: url("./img/germany/_492050a0-d27d-4c38-a0c0-3dab1daf56a0.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/germany/_59b8cd0f-06e2-4a2f-a252-519281c85dd6.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/germany/_832ba0f4-bbd5-43b1-ba66-ac7a3abc2a2e.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/germany/_8fcabc53-218c-4891-a4af-cb4580068cd9.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+@keyframes example6{
+    0%{
+      background-image: url("./img/estonia/_7053efe9-fdcd-48ac-9472-6f995eb75b83.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/estonia/_9d6e3ca1-d7bf-47ba-9ae6-5f005a0c520f.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/estonia/_c94a0259-4a44-424e-a195-c4a3ab232833.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/estonia/_e17ecb66-26ea-41ca-b17a-2eb8303c992b.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+@keyframes example7{
+    0%{
+      background-image: url("./img/Kenya/_192173a6-9dea-4f0c-aec6-4abdf6e9c607.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/Kenya/_8ccbaacf-0b1d-4d63-9c79-7509370377e4.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/Kenya/_b9cc4841-337e-47e5-997e-514d6d1c81aa.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/Kenya/_dca8ffb7-698a-4a6f-b78e-38256f788802.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+@keyframes example8{
+    0%{
+      background-image: url("./img/mexico/_21d4a137-0b55-4298-a484-4fd26e7ef6f9.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/mexico/_c1bdaa07-b8b0-41e5-8c98-2d9b532e044a.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/mexico/_c5d563aa-48f7-4261-a7dc-d8bdc22798e7.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/mexico/_ef3e03b4-4a32-4fc5-9fef-28d98f699e1c.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+@keyframes example9{
+    0%{
+      background-image: url("./img/UK/_51d016af-f551-4914-9318-53f1430da801.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/UK/_590ae92e-66d8-4fa7-90dc-e699ac6a3579.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/UK/_d48ebe64-7682-427f-95e0-9b406b03429a.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/UK/_f1de1555-1552-49ac-99cf-a7bbfd6278ff.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+@keyframes example10{
+    0%{
+      background-image: url("./img/paraguay/_22375f8a-e364-4d45-9e67-0c1048cfd1b3.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    33%{
+      background-image: url("./img/paraguay/_397df290-e380-486b-8c62-05d96b548ddc.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    66%{
+      background-image: url("./img/paraguay/_5860c6b8-bfad-442e-b0a7-de4ed71f29ab.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+    100%{
+      background-image: url("./img/paraguay/_bd249e9a-0aa2-473f-b845-34109b7896b7.jpg");
+      /* background-size: 100% 100%;  */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+}
+
+.button1:active,.button2:active  {
+    transform: translateY(4px);
+}

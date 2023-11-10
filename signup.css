@@ -1,0 +1,202 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#photo{
+    height: 690px;
+    /* width: 1000px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#section-1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#section-2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#section-3{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#section-4{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#section-5{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+#abs{
+    position: absolute;
+    top:10%;
+    right: 8%;
+    visibility: visible;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(38, 39, 39, 0.466);
+    height: 570px;
+    width: 300px;
+    
+}
+.title{
+    font-family: 'Kenia', sans-serif;
+    font-size: 21px;
+    color:#ffee00;
+}
+h2{
+    /* font-family: 'Kenia', sans-serif; */
+    font-family: 'Lobster', sans-serif;
+    color:#fff;
+    font-size: 33px;
+}
+#button1{
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    color: orangered;
+    font-size: 19px;
+    border: 1px solid orangered;
+    background-color: rgba(38, 39, 39, 0.66);
+    font-family: Black Ops One;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#button1:hover{
+    color: #fff;
+    background-color: orangered;
+    cursor:pointer;
+}
+#button2{
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    color: green;
+    font-size: 19px;
+    border: 1px solid green;
+    background-color: rgba(38, 39, 39, 0.66);
+    font-family: Black Ops One;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#button2:hover{
+    color: #fff;
+    background-color: green;
+    cursor:pointer;
+}
+h1{
+    font-family: Agbalumo;
+    margin-top: 1%;
+    font-size: 48px;
+    background: linear-gradient(124deg,#00ffd5, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3,#1ddde8);
+    background-size: 1800% 1800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+     animation: rainbow 18s ease infinite;
+}
+input{
+    height:28px;
+    width: 250px;
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+#abs1{
+    position: absolute;
+    top:3%;
+    right: 12%;
+    left: 12%;
+    visibility:hidden;
+}
+#htp{
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(238, 255, 0, 0.93);
+    height: 620px;
+    width: 1000px; 
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+   /* font-family: 'Caveat', cursive; */
+   /* font-family: 'Shadows Into Light', cursive; */
+   font-family: 'Edu TAS Beginner', cursive;
+}
+#exit{
+    background:none;
+    position: absolute;
+    right: 2%;
+    top: -2%;
+    border: none;
+}
+#x{
+    width: 60px;
+    height: 60px;
+}
+button:active {
+    transform: translateY(4px);
+  }
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+#button1 span,#button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #button1 span:after,#button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #button1:hover span, #button2:hover span {
+    padding-right: 25px;
+  }
+  
+  #button1:hover span:after,#button2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
