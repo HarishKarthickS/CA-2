@@ -67,7 +67,7 @@ h1{
     justify-content: space-around;
     align-items: center; 
 }
-button{
+.button{
     margin-top: 6%;
     width: 177px;
     height: 50px;
@@ -459,7 +459,7 @@ font-size: 21px;
       background-attachment: fixed; 
     }
 }
-button:hover{
+.button:hover{
     background: linear-gradient(129deg,#fff,#1de840,#36ff57,#00ff2a,#008a17);
     cursor: pointer;
     color: rgb(238, 255, 0);
