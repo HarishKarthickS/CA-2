@@ -29,7 +29,7 @@ let highdt=window.localStorage.getItem('highDt');
 name1.innerHTML=nameDt;
 scoreBoard.innerHTML = score;
 playAgainButton.onclick = (evt) => {
-  location.href = "./game.html";
+  location.href = "game.html";
 };
 if(lowdt=='1'){
    levelboard.innerHTML='Easy';
