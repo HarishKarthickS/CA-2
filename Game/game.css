@@ -12,8 +12,8 @@ Body{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 690px;
-    width: 1400px;
+    height: 100%;
+    width: 100%;
     /* Rainbow animation */
     -webkit-animation: rainbow 18s ease infinite;
     -moz-animation: rainbow 18s ease infinite;

@@ -5,7 +5,7 @@
 }
 Body{
     background-image: url("./img/_2498f958-ee8f-4c6f-9255-9748d5cd04ea.jpg");
-    background-size: 1400px 690px ;
+    background-size: 100% 100% ;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center; 
